@@ -1,4 +1,4 @@
-// +build freebsd dragonfly
+// +build linux
 
 package raw
 
@@ -11,6 +11,7 @@ type Termios struct {
 	Oflag  uint32
 	Cflag  uint32
 	Lflag  uint32
+	Cline  byte
 	Cc     [20]byte
 	Ispeed uint32
 	Ospeed uint32
